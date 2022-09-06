@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.body{
+    background:url('snake.jpg')no-repeat center ;
+    background-size: cover;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
+#board{
+    background:linear-gradient(rgb(167, 227, 167),rgb(229, 229, 160));
+    width:90vmin;
+    height:92vmin;
+    border:2px solid black;
+    display:grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns:repeat(18, 1fr);
+}
+.head{
+    background:linear-gradient(rgb(222, 152, 152),rgb(240, 240, 147));
+    border:2px solid purple;
+    transform:scale(1.02);
+    border-radius: 9px;
+
+}
+
+.snake{
+    background-color: purple;
+    border:.25vmin solid white;
+    border-radius: 12px;
+
+}
+.food{ 
+    background:linear-gradient(red,purple);
+    border:.25vmin solid black;
+    border-radius: 8px;
+}
+#scoreBox{
+    position:absolute;
+    top:9px;
+    right:80px;
+    font-size:39px;
+    font-weight: bold;
+}
+#hiscoreBox
+{
+    position:absolute;
+    top:67px;
+    right:80px;
+    font-size:39px;
+    font-weight: bold;
+}
+.mybutton1{
+    border-radius: 10px;
+    background-color:burlywood;
+    width: 123px;
+    height: 35px;
+    padding:12px 12px 12px 12px;
+    margin:12px 57px 12px 12px;
+
+}
+.buttons{
+    display:flex;
+    flex-direction:column;
+    padding:12px 12px 12px 12px;
+    margin:12px 57px 12px 12px;
+}
